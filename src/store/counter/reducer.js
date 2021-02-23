@@ -1,14 +1,14 @@
-import { INCREASE_COUNT, DECREASE_COUNT } from './type'
+import { INCREASE_COUNT, DECREASE_COUNT } from './type';
 
-const counterReducer = (count = 0, action) => {
+const counterReducer = (state = 0, action) => {
   switch (action.type) {
     case INCREASE_COUNT:
-      return count + count
+      return state + state;
     case DECREASE_COUNT:
-      return count - count
+      return state - state;
     default:
-      return count
+      return state;
   }
-}
+};
 
-export default counterReducer
+export default counterReducer;

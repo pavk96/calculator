@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import SearchBar from './SearchBar'
-import Counter from './Counter'
-import Calculator from './Calculator'
-import './App.css'
+import SearchBar from './SearchBar';
+import Counter from './Counter';
+import Calculator from './Calculator';
+import './App.css';
+import { AppTitle } from './styled';
 
 const App = () => {
   return (
@@ -11,8 +12,9 @@ const App = () => {
       {/* <SearchBar />
       <Counter /> */}
       <Calculator />
+      <AppTitle>Hello World!</AppTitle>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
